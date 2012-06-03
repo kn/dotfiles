@@ -1,0 +1,4 @@
+alias ls='ls -laGh'
+alias tail='tail -F'
+alias cdd='cd -'
+alias ..='cd ..'

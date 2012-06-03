@@ -1,0 +1,5 @@
+## Installation
+
+```ruby
+rake install
+```
