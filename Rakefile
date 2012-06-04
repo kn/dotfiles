@@ -11,6 +11,7 @@ task :install do
         print "Overwrite ~/#{file}? [yn]: "
         case $stdin.gets.chomp
         when 'y'
+          system %Q{rm -rf "$HOME/#{file}"}
           create_sym_link_for(file)
         else
           puts "Skipped ~/#{file}."
