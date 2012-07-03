@@ -36,5 +36,8 @@ complete -o default -W "\$(git branch 2>/dev/null | cut -c 3-)" git
 ###
 
 PATH=$PATH:/usr/local/bin/scala/bin # Add Scala bin path
-PATH=$PATH:/usr/local/bin/scala/bin:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:./node_modules/.bin # Add node modules hidden bin relative path
 EDITOR=vim
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
