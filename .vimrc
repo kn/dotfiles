@@ -10,6 +10,7 @@ Bundle 'SuperTab-continued.'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-surround'
+Bundle 'nathanaelkane/vim-indent-guides'
 
 Bundle 'derekwyatt/vim-scala'
 Bundle 'digitaltoad/vim-jade'
@@ -57,3 +58,7 @@ map <D-R> :SweetVimRspecRunForcused<CR>
 
 cmap W w
 cmap Q q
+
+" ----------------------------
+" Other Magics
+" ----------------------------
