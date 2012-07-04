@@ -11,6 +11,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-surround'
 Bundle 'nathanaelkane/vim-indent-guides'
+au VimEnter * IndentGuidesEnable
 
 Bundle 'derekwyatt/vim-scala'
 Bundle 'digitaltoad/vim-jade'
