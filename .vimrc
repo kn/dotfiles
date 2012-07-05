@@ -60,6 +60,8 @@ map <D-R> :SweetVimRspecRunForcused<CR>
 cmap W w
 cmap Q q
 
+inoremap jj <Esc>
+
 " ----------------------------
 " Other Magics
 " ----------------------------
