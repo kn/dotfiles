@@ -10,8 +10,6 @@ Bundle 'SuperTab-continued.'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-surround'
-Bundle 'nathanaelkane/vim-indent-guides'
-au VimEnter * IndentGuidesEnable
 
 Bundle 'derekwyatt/vim-scala'
 Bundle 'digitaltoad/vim-jade'
@@ -29,6 +27,7 @@ Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-rails'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'vim-scripts/VimClojure'
+Bundle 'helino/vim-json'
 
 set expandtab
 set tabstop=2
