@@ -57,6 +57,10 @@ augroup END
 map <D-r> :SweetVimRspecRunFile<CR>
 map <D-R> :SweetVimRspecRunForcused<CR>
 
+" Clear search highlights by pressing enter.
+nnoremap <CR> :nohlsearch<CR>/<BS>
+
+" Because I'm a bad typer.
 cmap W w
 cmap Q q
 
