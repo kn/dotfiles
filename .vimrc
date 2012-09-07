@@ -46,6 +46,7 @@ syntax on
 au FileType,BufNewFile Rakefile set ft=ruby
 au FileType,BufNewFile Guardfile set ft=ruby
 au FileType,BufNewFile Gemfile set ft=ruby
+au BufRead,BufNewFile *.thrift set filetype=thrift
 
 augroup filetypedetect 
   au BufNewFile,BufRead *.confluencewiki set filetype=confluencewiki
