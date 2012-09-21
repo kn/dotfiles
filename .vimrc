@@ -65,7 +65,7 @@ nnoremap <CR> :nohlsearch<CR>/<BS>
 cmap W w
 cmap Q q
 
-inoremap jj <Esc>
+inoremap jk <Esc>
 
 " ----------------------------
 " Other Magics
