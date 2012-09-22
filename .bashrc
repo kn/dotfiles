@@ -11,6 +11,7 @@ alias cdd='cd -'
 alias ..='cd ..'
 alias f='find . -name'
 alias g='git'
+alias v='vim'
 
 alias r='rake'
 alias rmig='rake db:migrate'
