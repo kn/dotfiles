@@ -57,7 +57,8 @@ augroup END
 " ----------------------------
 map <D-r> :SweetVimRspecRunFile<CR>
 map <D-R> :SweetVimRspecRunForcused<CR>
-ca WQ wa
+ca WQ wq
+ca Wq wq
 ca W w
 ca Q q
 
