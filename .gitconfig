@@ -4,13 +4,22 @@
 [color]
 	ui = auto
 [alias]
-	co = checkout
-	ci = commit
-	br = branch
-	aa = add --all
-	st = status
-	l = log
 	a = add
+	l = log
 	m = merge
+	aa = add --all
+	br = branch
+	ci = commit
+	co = checkout
+  dc = diff --cached
+  di = diff
+  ds = diff --stat
+  fa = fetch --all
+	st = status
+  pod = push origin deploy
+  pom = push origin master
 [core]
 	editor = /usr/bin/vim
+	excludesfile = /Users/katsuyanoguchi/.global_ignore
+[merge]
+  tool = vimdiff
