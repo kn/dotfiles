@@ -1,25 +1,25 @@
 [user]
-	name = Katsuya Noguchi
-	email = katsuya@twitter.com
+  name = Katsuya Noguchi
+  email = katsuya@twitter.com
 [color]
-	ui = auto
+  ui = auto
 [alias]
-	a = add
-	l = log
-	m = merge
-	aa = add --all
-	br = branch
-	ci = commit
-	co = checkout
+  a = add
+  l = log
+  m = merge
+  aa = add --all
+  br = branch
+  ci = commit
+  co = checkout
   dc = diff --cached
   di = diff
   ds = diff --stat
   fa = fetch --all
-	st = status
+  st = status
   pod = push origin deploy
   pom = push origin master
 [core]
-	editor = /usr/bin/vim
-	excludesfile = /Users/katsuyanoguchi/.global_ignore
+  editor = /usr/bin/vim
+  excludesfile = /Users/katsuyanoguchi/.global_ignore
 [merge]
   tool = vimdiff
