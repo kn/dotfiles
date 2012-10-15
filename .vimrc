@@ -35,9 +35,13 @@ set wildmode=list:longest
 set nu
 set sts=2
 set ai
-set bg=dark
 set shiftwidth=2
 set hlsearch
+" Prevent vim from clobbering the scrollback buffer.
+set t_ti= t_te=
+" Color
+set t_Co=256
+set bg=dark
 syntax on
 
 " ----------------------------
@@ -47,6 +51,8 @@ au FileType,BufNewFile Rakefile set ft=ruby
 au FileType,BufNewFile Guardfile set ft=ruby
 au FileType,BufNewFile Gemfile set ft=ruby
 au BufRead,BufNewFile *.thrift set filetype=thrift
+" Don't syntax highlight markdown because it's often wrong.
+au! FileType mkd setlocal syn=off
 
 augroup filetypedetect 
   au BufNewFile,BufRead *.confluencewiki set filetype=confluencewiki
