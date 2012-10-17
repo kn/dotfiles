@@ -37,8 +37,6 @@ set sts=2
 set ai
 set shiftwidth=2
 set hlsearch
-" Prevent vim from clobbering the scrollback buffer.
-set t_ti= t_te=
 " Color
 set t_Co=256
 set bg=dark
