@@ -52,14 +52,14 @@ au BufRead,BufNewFile *.thrift set filetype=thrift
 " Don't syntax highlight markdown because it's often wrong.
 au! FileType mkd setlocal syn=off
 " Auto remove brittspaces
-au BufWritePre *.scala :%s/\s+$//e
-au BufWritePre *.rb :%s/\s+$//e
-au BufWritePre *.js :%s/\s+$//e
-au BufWritePre *.coffee :%s/\s+$//e
-au BufWritePre *.java :%s/\s+$//e
-au BufWritePre *.css :%s/\s+$//e
-au BufWritePre *.scss :%s/\s+$//e
-au BufWritePre *.less :%s/\s+$//e
+au BufWritePre *.scala :%s/\s\+$//e
+au BufWritePre *.rb :%s/\s\+$//e
+au BufWritePre *.js :%s/\s\+$//e
+au BufWritePre *.coffee :%s/\s\+$//e
+au BufWritePre *.java :%s/\s\+$//e
+au BufWritePre *.css :%s/\s\+$//e
+au BufWritePre *.scss :%s/\s\+$//e
+au BufWritePre *.less :%s/\s\+$//e
 
 augroup filetypedetect 
   au BufNewFile,BufRead *.confluencewiki set filetype=confluencewiki
