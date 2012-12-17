@@ -41,6 +41,9 @@ set sts=2
 set ai
 set shiftwidth=2
 set hlsearch
+set smartindent "indent after {
+set autoindent "keep the current indent for new lines
+
 " Color
 set t_Co=256
 set bg=dark
