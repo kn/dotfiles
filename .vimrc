@@ -29,6 +29,10 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'vim-scripts/VimClojure'
 Bundle 'helino/vim-json'
 
+" .vim/undodir/  must exist
+set undodir=~/.vim/undodir "persistent undos between editing sessions
+set undofile "Doesn't work in ubuntu 10.04
+
 set expandtab
 set tabstop=2
 set wildmode=list:longest
