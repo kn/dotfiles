@@ -1,3 +1,4 @@
 .vim/bundle/*
+.vim/undodir/*
 !.vim/bundle/vundle
 !.vim/bundle/.vundle

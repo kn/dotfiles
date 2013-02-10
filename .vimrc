@@ -31,6 +31,10 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'vim-scripts/VimClojure'
 Bundle 'helino/vim-json'
 
+" .vim/undodir/  must exist
+set undodir=~/.vim/undodir "persistent undos between editing sessions
+set undofile "Doesn't work in ubuntu 10.04
+
 set expandtab
 set tabstop=2
 set wildmode=list:longest
@@ -39,6 +43,10 @@ set sts=2
 set ai
 set shiftwidth=2
 set hlsearch
+set smartindent "indent after {
+set autoindent "keep the current indent for new lines
+set title "set terminal title to file name
+
 " Color
 set t_Co=256
 set bg=dark
@@ -54,14 +62,14 @@ au BufRead,BufNewFile *.thrift set filetype=thrift
 " Don't syntax highlight markdown because it's often wrong.
 au! FileType mkd setlocal syn=off
 " Auto remove brittspaces
-au BufWritePre *.scala :%s/\s+$//e
-au BufWritePre *.rb :%s/\s+$//e
-au BufWritePre *.js :%s/\s+$//e
-au BufWritePre *.coffee :%s/\s+$//e
-au BufWritePre *.java :%s/\s+$//e
-au BufWritePre *.css :%s/\s+$//e
-au BufWritePre *.scss :%s/\s+$//e
-au BufWritePre *.less :%s/\s+$//e
+au BufWritePre *.scala :%s/\s\+$//e
+au BufWritePre *.rb :%s/\s\+$//e
+au BufWritePre *.js :%s/\s\+$//e
+au BufWritePre *.coffee :%s/\s\+$//e
+au BufWritePre *.java :%s/\s\+$//e
+au BufWritePre *.css :%s/\s\+$//e
+au BufWritePre *.scss :%s/\s\+$//e
+au BufWritePre *.less :%s/\s\+$//e
 
 augroup filetypedetect 
   au BufNewFile,BufRead *.confluencewiki set filetype=confluencewiki
