@@ -16,6 +16,7 @@ alias v='vim'
 alias r='rake'
 alias rmig='rake db:migrate'
 alias be='bundle exec'
+alias ber='bundle exec rake'
 alias bi='bundle install'
 
 # Type: Scripting
@@ -37,6 +38,7 @@ complete -o default -W "\$(git branch 2>/dev/null | cut -c 3-)" git
 ###
 
 SCALA_HOME=/usr/local/share/scala
+PATH=/usr/local/bin:$PATH
 PATH=$PATH:$SCALA_HOME/bin # Add Scala bin path
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:./node_modules/.bin # Add node modules hidden bin relative path
