@@ -6,11 +6,13 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+Bundle 'scrooloose/nerdtree'
 Bundle 'SuperTab-continued.'
 Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-surround'
+Bundle 'wincent/Command-T'
 
+" Language plugins
 Bundle 'derekwyatt/vim-scala'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'duskhacker/sweet-rspec-vim'
