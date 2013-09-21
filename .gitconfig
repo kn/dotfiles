@@ -1,6 +1,6 @@
 [user]
   name = Katsuya Noguchi
-  email = katsuya@twitter.com
+  email = katsuya.noguchi@gmail.com
 [color]
   ui = auto
 [alias]
@@ -24,3 +24,5 @@
   excludesfile = /Users/katsuyanoguchi/.global_ignore
 [merge]
   tool = vimdiff
+[credential]
+	helper = osxkeychain

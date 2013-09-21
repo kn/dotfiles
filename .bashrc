@@ -14,7 +14,6 @@ alias g='git'
 alias v='vim'
 
 alias r='rake'
-alias rmig='rake db:migrate'
 alias be='bundle exec'
 alias ber='bundle exec rake'
 alias bi='bundle install'
