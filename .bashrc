@@ -12,6 +12,9 @@ alias ..='cd ..'
 alias f='find . -name'
 alias g='git'
 alias v='vim'
+alias w='workon'
+alias d='deactivate'
+alias mkvirtualenv='mkvirtualenv --no-site-packages'
 
 alias r='rake'
 alias be='bundle exec'
@@ -42,5 +45,7 @@ PATH=$PATH:$SCALA_HOME/bin # Add Scala bin path
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:./node_modules/.bin # Add node modules hidden bin relative path
 EDITOR=vim
+WORKON_HOME=~/.virtualenvs
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
+[[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && . "/usr/local/bin/virtualenvwrapper.sh"  # This loads virtualenv wrapper.
