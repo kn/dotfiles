@@ -11,6 +11,7 @@ Bundle 'SuperTab-continued.'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'wincent/Command-T'
+" Bundle 'scrooloose/syntastic'
 
 " Language plugins
 Bundle 'derekwyatt/vim-scala'
@@ -30,6 +31,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'vim-scripts/VimClojure'
 Bundle 'helino/vim-json'
+"Bundle 'fisadev/vim-isort'
 
 " .vim/undodir/  must exist
 set undodir=~/.vim/undodir "persistent undos between editing sessions
@@ -52,27 +54,36 @@ set t_Co=256
 set bg=dark
 syntax on
 
+" Highlight over lengthed line
+au FileType javascript,python,ruby highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+au FileType javascript,python,ruby match OverLength /\%81v.\+/
+
 " ----------------------------
 " Filetype Settings
 " ----------------------------
 au FileType,BufNewFile Rakefile set ft=ruby
 au FileType,BufNewFile Guardfile set ft=ruby
 au FileType,BufNewFile Gemfile set ft=ruby
-au BufRead,BufNewFile *.thrift set filetype=thrift
+au BufRead,BufNewFile *.thrift set ft=thrift
 " Don't syntax highlight markdown because it's often wrong.
 au! FileType mkd setlocal syn=off
 " Auto remove brittspaces
 au BufWritePre *.scala :%s/\s\+$//e
 au BufWritePre *.rb :%s/\s\+$//e
+au BufWritePre *.py :%s/\s\+$//e
 au BufWritePre *.js :%s/\s\+$//e
 au BufWritePre *.coffee :%s/\s\+$//e
 au BufWritePre *.java :%s/\s\+$//e
 au BufWritePre *.css :%s/\s\+$//e
 au BufWritePre *.scss :%s/\s\+$//e
 au BufWritePre *.less :%s/\s\+$//e
+" Language specific settings
+au BufRead *.py set tabstop=4
+au BufRead *.py set sts=4 
+au BufRead *.py set shiftwidth=4
 
 augroup filetypedetect 
-  au BufNewFile,BufRead *.confluencewiki set filetype=confluencewiki
+  au BufNewFile,BufRead *.confluencewiki set ft=confluencewiki
 augroup END
 
 " ----------------------------
@@ -96,8 +107,10 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
+" Isort
+map <C-i> :Isort<CR>
 
-inoremap jk <Esc>
+"inoremap jk <Esc>
 
 " -------------------------------------------
 " Switch between test and production code.
