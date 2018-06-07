@@ -6,32 +6,14 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
-Bundle 'scrooloose/nerdtree'
-Bundle 'SuperTab-continued.'
+Bundle 'SuperTab'
 Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
 Bundle 'wincent/Command-T'
-" Bundle 'scrooloose/syntastic'
 
 " Language plugins
-Bundle 'derekwyatt/vim-scala'
 Bundle 'digitaltoad/vim-jade'
-Bundle 'duskhacker/sweet-rspec-vim'
-Bundle 'groenewege/vim-less'
-Bundle 'juvenn/mustache.vim'
-Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'pangloss/vim-javascript'
-Bundle 'sprsquish/thrift.vim'
-Bundle 'tpope/vim-bundler'
-Bundle 'tpope/vim-cucumber'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-rake'
-Bundle 'tpope/vim-rails'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'vim-scripts/VimClojure'
-Bundle 'helino/vim-json'
-"Bundle 'fisadev/vim-isort'
 
 " .vim/undodir/  must exist
 set undodir=~/.vim/undodir "persistent undos between editing sessions
@@ -40,7 +22,7 @@ set undofile "Doesn't work in ubuntu 10.04
 set expandtab
 set tabstop=2
 set wildmode=list:longest
-set nu
+set nonu
 set sts=2
 set ai
 set shiftwidth=2
@@ -107,37 +89,3 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
-" Isort
-map <C-i> :Isort<CR>
-
-"inoremap jk <Esc>
-
-" -------------------------------------------
-" Switch between test and production code.
-" -------------------------------------------
-function! OpenTestAlternate()
-  let new_file = AlternateForCurrentFile()
-  exec ':e ' . new_file
-endfunction
-function! AlternateForCurrentFile()
-  let current_file = expand("%")
-  let new_file = current_file
-  let in_spec = match(current_file, '^spec/') != -1
-  let going_to_spec = !in_spec
-  let in_app = match(current_file, '\<controllers\>') != -1 || match(current_file, '\<models\>') != -1 || match(current_file, '\<views\>') != -1 || match(current_file, '\<helpers\>') != -1
-  if going_to_spec
-    if in_app
-      let new_file = substitute(new_file, '^app/', '', '')
-    end
-    let new_file = substitute(new_file, '\.rb$', '_spec.rb', '')
-    let new_file = 'spec/' . new_file
-  else
-    let new_file = substitute(new_file, '_spec\.rb$', '.rb', '')
-    let new_file = substitute(new_file, '^spec/', '', '')
-    if in_app
-      let new_file = 'app/' . new_file
-    end
-  endif
-  return new_file
-endfunction
-nnoremap <leader>. :call OpenTestAlternate()<cr>
