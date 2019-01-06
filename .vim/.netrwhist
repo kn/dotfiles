@@ -1,9 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/kn/workspace/dotfiles/.git'
-let g:netrw_dirhist_2='/Users/kn/workspace/dotfiles/.vim'
-let g:netrw_dirhist_3='/Users/kn/workspace/color/src/django_apps/sample_classifications'
-let g:netrw_dirhist_4='/Users/kn/workspace/color/src/django_apps/variant_classifications/tests/test_views'
-let g:netrw_dirhist_5='/Users/kn/workspace/color/src/django_projects/default_db'
-let g:netrw_dirhist_6='/Users/kn/workspace/color/data'
-let g:netrw_dirhist_7='/Users/kn'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/kn/repos/ganache-core/node_modules/ethereumjs-vm/dist'
+let g:netrw_dirhist_2='/Users/kn/repos/ethereumjs-vm/lib'
+let g:netrw_dirhist_3='/Users/kn/repos/ganache-core/node_modules/merkle-patricia-tree'
+let g:netrw_dirhist_4='/Users/kn/repos/merkle-patricia-tree'
+let g:netrw_dirhist_5='/Users/kn/repos/ganache-core/node_modules/merkle-patricia-tree'

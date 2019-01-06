@@ -14,6 +14,7 @@ Bundle 'wincent/Command-T'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'kien/ctrlp.vim'
 Bundle 'pangloss/vim-javascript'
+Bundle 'tomlion/vim-solidity'
 
 " .vim/undodir/  must exist
 set undodir=~/.vim/undodir "persistent undos between editing sessions

@@ -19,6 +19,7 @@
   ds = diff --stat
   fa = fetch --all
   st = status
+  who = blame
   pod = push origin deploy
   pom = push origin master
   refresh = !bash -c "cd .; current_branch=`git name-rev --name-only head`;echo $current_branch; if [[ 'xx' != 'x${ current_branch}x' ]];then git checkout master; git pull; git checkout ${current_branch};git merge --no-ff master; fi"

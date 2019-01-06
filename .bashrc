@@ -19,6 +19,11 @@ source ~/.git-completion.bash
 source ~/.git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='[\W$(__git_ps1)]\$ '
+export PATH=/usr/local/bin:/usr/local/opt/python/libexec/bin:/usr/local/opt/node@8/bin:$PATH
+
+# Go
+export GOPATH=~/go
+export PATH=$PATH:$GOPATH/bin
 
 ###
 # Env
