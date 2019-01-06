@@ -26,5 +26,5 @@ end
 
 def create_sym_link_for(file)
   puts "Linking ~/#{file}..."
-  system %Q{ln -s "$PWD/#{file}" "$HOME/#{file}"}
+  system %Q{ln -fs "$PWD/#{file}" "$HOME/#{file}"}
 end
