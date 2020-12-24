@@ -9,11 +9,11 @@ Bundle 'gmarik/vundle'
 Bundle 'SuperTab'
 Bundle 'tpope/vim-fugitive'
 Bundle 'wincent/Command-T'
+Bundle 'ctrlpvim/ctrlp.vim'
 
 " Language plugins
-Bundle 'digitaltoad/vim-jade'
-Bundle 'kien/ctrlp.vim'
 Bundle 'pangloss/vim-javascript'
+Bundle 'leafgarland/typescript-vim'
 Bundle 'tomlion/vim-solidity'
 
 " .vim/undodir/  must exist
