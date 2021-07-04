@@ -16,6 +16,10 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'leafgarland/typescript-vim'
 Bundle 'tomlion/vim-solidity'
 
+" Indent visual guide
+Bundle 'nathanaelkane/vim-indent-guides'
+let g:indent_guides_enable_on_vim_startup = 1
+
 " .vim/undodir/  must exist
 set undodir=~/.vim/undodir "persistent undos between editing sessions
 set undofile "Doesn't work in ubuntu 10.04
